@@ -1,0 +1,222 @@
+* {
+	margin: 0; padding: 0;
+}
+
+html {
+	
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	
+	font-family: sans-serif;
+	color: #333333;
+	
+	background: #eeeeee;
+}
+
+a {
+	color: #088658;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#wrapper {
+	width: 100%; height: 100%;
+	
+	/*background: #eeeeee;*/
+
+	margin: 0 auto;
+	padding-top: 117px;
+
+}
+
+.col-3 > div {
+	width: 33%;
+}
+
+.col-4 > div {
+	width: 25%;
+}
+
+/*
+	HEADER
+*/
+.header {
+	width: 100%;
+	padding: 15px 0 15px;
+	overflow: hidden;
+	background: #ffffff;
+	box-shadow: 0 2px 7px rgba(0,0,0,.3);
+	position: fixed;
+	z-index: 10;
+}
+
+.header > div {
+	display: inline-block;
+}
+
+/*
+	LOGO
+*/
+
+.header .logo {
+	margin-left: 14px;
+}
+
+
+/*
+	NAVIGATION
+*/
+.header .navigation {
+	float: right;
+}
+
+.header .navigation ul {
+	list-style: none;
+	overflow: hidden;
+	padding: 14px 0;
+}
+
+.header .navigation li {
+	float: left;
+	margin-right: 10px;
+}
+
+.header .navigation a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #eeeeee;
+	background: #333333;
+	padding: 14px;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+
+.header .navigation a:hover {
+	background: #088658;
+}
+
+.header .navigation li.active a {
+	background: #088658;
+	cursor: default;
+}
+
+/*
+	CAROUSEL
+*/
+
+#carousel {
+	position: relative;
+	overflow: hidden;
+}
+
+#carousel .button {
+	position: absolute;
+	top: 150px;
+}
+
+#carousel .button-left {
+	left: 10px;
+}
+
+#carousel .button-right {
+	right: 10px;
+}
+
+#carousel div.content-carousel {
+	position: relative;
+	width: 800px; height: 360px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#carousel div.content-carousel ul {
+	list-style: none;
+}
+
+#carousel div.content-carousel li {
+	float: left;
+	line-height: 1.4em;
+}
+
+#carousel div.content-carousel img {
+
+}
+
+#carousel div.content-carousel span {
+	position: absolute;
+	width: 80%; height: 25%;
+	bottom: 0; left: 0;
+	background: rgba(255,255,255, .7);
+	padding: 15px;
+	box-shadow: 0 0 3px rgba(0,0,0,.3)
+}
+
+#carousel div.content-carousel span h1 {
+	margin: 5px 0 10px;
+}
+
+/*
+	TEASER
+*/
+
+.teaser {
+	overflow: auto;
+	margin: 20px 0;
+	line-height: 1.4em;
+}
+
+.teaser > div {
+	float: left;
+	display: inline-block;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.teaser img {
+	width: 100%; height: auto;
+}
+
+.teaser h2 {
+	text-align: left;
+	margin: 10px 0;
+}
+
+.teaser p {
+	font-size: 12px
+}
+
+/*
+	FOOTER
+*/
+
+.footer {
+	width: 100%; height: 300px;
+	background: #333333;
+	color: #eeeeee;
+}
+
+/*
+	MEDIA QUERIES
+*/
+
+@media (min-width: 980px) {
+	#wrapper {
+		width: 960px;
+	}
+}
+
+@media (max-width: 600px) {
+	.col-3 > div {
+		width: 100%;
+	}
+
+	.col-4 > div {
+		width: 50%;
+	}
+}
